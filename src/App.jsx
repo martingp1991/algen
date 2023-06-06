@@ -8,24 +8,31 @@ import Work from "./components/Work"
 import Testimonial from "./components/Testimonial";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import './App.css'
+import './App.css';
 
 function App() {
-
   return (
     <>
-      <Navbar/>
-      <HeroBanner/>
-      <About/>
-      <Team/>
-      <Service/>
-      <Cursos />
-      <Work/>
-      <Testimonial />
-      <Contact />
-      <Footer/>
+      <nav>
+        <Navbar />
+      </nav>
+
+      <main>
+        <HeroBanner />
+        <About />
+        <Team />
+        <Service />
+        <Cursos />
+        <Work />
+        <Testimonial />
+        <Contact />
+      </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

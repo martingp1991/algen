@@ -45,7 +45,7 @@ body {
 }
 
 .bg-hero {
-  background-image: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 80%), url(./assets/background/bg2.jpg);
+  background-image: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 80%), url(./assets/background/bg2.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -55,7 +55,7 @@ body {
 
 
 .bg-section {
-  background-image: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 80%), url(./assets/background/bg.jpg);
+  background-image: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 80%), url(./assets/background/bg.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,7 +63,7 @@ body {
 }
 
 .bg-section-reverse {
-  background-image: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 80%), url(./assets/background/bgreverse.jpg);
+  background-image: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 80%), url(./assets/background/bgreverse.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

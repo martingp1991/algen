@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 const Work = () => {
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 1000,
     });
   }, []);
 
@@ -34,18 +34,16 @@ const Work = () => {
 
   return (
     <section id="work" className="bg-section">
-      <div className="container px-5 pt-32 mx-auto lg:px-4 lg:py-4">
+      <div className="container px-5 pt-32 mx-auto lg:px-4 lg:py-4" data-aos="fade-up">
         <div className="pt-14"></div>
         <div className="grid gap-10 pt-10 lg:grid-cols-2">
           <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400"></div>
             <div
               className="bg-gradient-to-r from-[#1f0019] to-transparent bg-opacity-50 rounded-lg px-4 py-6 mx-auto sm:px-8 sm:py-8 md:px-10 md:py-8 lg:max-w-xl lg:px-12 lg:py-10"
-              data-aos="fade-up"
             >
               <div
                 className="flex items-center mb-8 justify-right sm:justify-start"
-                data-aos="fade-up"
               >
                 <h1 className="px-3 text-5xl font-semibold text-gray-300 uppercase">
                   TRABAJOS
@@ -53,7 +51,6 @@ const Work = () => {
               </div>
               <p
                 className="text-gray-400 text-lg"
-                data-aos="fade-up"
               >
                 En nuestro estudio de grabación, nos esforzamos por brindar el
                 mejor servicio posible para ayudar a nuestros clientes a lograr
@@ -68,8 +65,8 @@ const Work = () => {
           <div className="mt-20">
             {audios.map((audio, index) => (
               <div key={index} className="mb-4">
-                <h2 className="text-gray-400 font-bold" data-aos="fade-up">{audio.title}</h2>
-                <audio controls className="mt-2 w-full lg:w-[500px]" data-aos="fade-up" controlsList="nodownload" preload="auto">
+                <h2 className="text-gray-400 font-bold">{audio.title}</h2>
+                <audio controls className="mt-2 w-full lg:w-[500px]"controlsList="nodownload" preload="auto">
                   <source src={audio.source} type="audio/mp3" />
                 </audio>
               </div>

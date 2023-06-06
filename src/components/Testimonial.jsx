@@ -6,11 +6,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 SwiperCore.use([Navigation, Pagination, Autoplay]);
-import testimonialImg1 from "../assets/testimolials-img/1.png"
-import testimonialImg2 from "../assets/testimolials-img/2.jpeg"
-import testimonialImg3 from "../assets/testimolials-img/3.png"
-import testimonialImg4 from "../assets/testimolials-img/4.png"
-import testimonialImg5 from "../assets/testimolials-img/5.jpg"
+import testimonialImg1 from "../assets/testimolials-img/1.webp"
+import testimonialImg2 from "../assets/testimolials-img/2.webp"
+import testimonialImg3 from "../assets/testimolials-img/3.webp"
+import testimonialImg4 from "../assets/testimolials-img/4.webp"
+import testimonialImg5 from "../assets/testimolials-img/5.webp"
 
 const Testimonial = () => {
   const swiperRef = useRef(null);
@@ -79,14 +79,14 @@ const Testimonial = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 1000,
     });
   }, []);
 
   return (
-    <section className="bg-section-reverse swiper-container" >
-      <div className="container px-5 pt-32 mx-auto lg:px-4 lg:py-4 ">
-        <div className="flex items-center justify-center pt-24" data-aos="fade-up">
+<section className="bg-section-reverse swiper-container">
+      <div className="container px-5 pt-32 mx-auto lg:px-4 lg:py-4" data-aos="fade-up">
+        <div className="flex items-center justify-center pt-24">
           <span className="h-1 bg-gray-700 w-14 rounded-3xl" />
           <h2 className="px-3 text-sm font-semibold text-white uppercase">
             COMENTARIOS
@@ -102,30 +102,29 @@ const Testimonial = () => {
         >
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.id}>
-              <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 ">
+              <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
                 <div className="lg:-mx-6 lg:flex lg:items-center">
                   <img
-                    className="object-cover object-center lg:w-1/2 lg:mx-6  h-[250px] w-[250px] rounded-lg lg:h-[36rem]"
+                    className="object-cover object-center lg:w-1/2 lg:mx-6 rounded-lg lg:h-[30rem]"
                     src={testimonial.image}
                     alt={testimonial.id}
-                    data-aos="fade-up"
                   />
                   <div className="absolute inset-x-0 bottom-0 pointer-events-none opacity-60 h-1/2 bg-gradient-to-t from-black"></div>
-                  <div className="mt-8 lg:w-1/2 lg:px-6 lg:mt-0 bg-gradient-to-l from-[#1f0019] to-transparent rounded-lg" data-aos="fade-up">
+                  <div className="mt-8 lg:w-1/2 lg:px-6 lg:mt-0 bg-gradient-to-l from-[#1f0019] to-transparent rounded-lg">
                     <p className="text-5xl font-semibold text-blue-500 ">“</p>
-                    <h1 className="text-2xl font-semibold text-gray-800 dark:text-white lg:text-3xl lg:w-96" data-aos="fade-up">
+                    <h1 className="text-2xl font-semibold text-gray-800 dark:text-white lg:text-3xl lg:w-96">
                       {testimonial.title}
                     </h1>
-                    <p className="max-w-lg mt-6 text-gray-500 dark:text-gray-400 text-md tracking-wide" data-aos="fade-up">
+                    <p className="max-w-lg mt-6 text-gray-500 dark:text-gray-400 text-md tracking-wide">
                       {testimonial.comment}
                     </p>
-                    <h3 className="mt-6 text-lg font-medium text-blue-500" data-aos="fade-up">
+                    <h3 className="mt-6 text-lg font-medium text-blue-500">
                       {testimonial.name}
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-300" data-aos="fade-up">
+                    <p className="text-gray-600 dark:text-gray-300">
                       {testimonial.jobTitle}
                     </p>
-                    <div className="flex items-center mt-8 lg:justify-start" >
+                    <div className="flex items-center mt-8 lg:justify-start">
                       <button title="left arrow" className="p-2 text-gray-800 transition-colors duration-300 border-2 rounded-full rtl:-scale-x-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 hover:bg-gray-100" onClick={handlePrevSlide}>
                         <IoIosArrowBack className="w-6 h-6" />
                       </button>

@@ -3,22 +3,27 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaFacebook, FaInstagram, FaSoundcloud, FaTwitch, FaYoutube } from 'react-icons/fa';
 import { IoIosArrowDown } from 'react-icons/io';
-import logo from '../assets/logo.png';
-
+import logo from '../assets/logo.webp';
 
 const HeroBanner = () => {
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 1000,
     });
   }, []);
 
   return (
     <section className="relative bg-hero" >
-      <div className="max-w-screen-xl px-4 py-32 mx-auto lg:flex lg:h-screen lg:items-center">
+      <div className="max-w-screen-xl px-4 py-32 mx-auto lg:flex lg:h-screen lg:items-center" data-aos="fade-up">
         <div className="mx-auto max-w-3xl text-center mt-[190px] lg:mt-[90px]">
-        <img src={logo} alt="Logo" className="mx-auto mb-4 max-h-[24vh] max-w-[420px] w-full h-auto" data-aos="fade-up"/>
-          <h1 className="mb-8 text-4xl font-bold text-gray-300" data-aos="fade-up">El sonido que merecés.</h1>
+          <img
+            src={logo}
+            alt="Logo"
+            className="mx-auto mb-4 max-h-[24vh] max-w-[70%] lg:max-w-[90%] w-full h-auto object-contain"
+            width="420"
+            height="auto"
+          />
+          <h1 className="mb-8 text-4xl font-bold text-gray-300" >El sonido que merecés.</h1>
           <ul className="flex justify-center space-x-8" data-aos="fade-up">
             <li>
               <a href="https://www.facebook.com/algenstudio" target="_blank" rel="noopener noreferrer">
@@ -46,7 +51,7 @@ const HeroBanner = () => {
               </a>
             </li>
           </ul>
-          <button className="mt-12 focus:outline-none" data-aos="fade-up">
+          <button className="mt-12 focus:outline-none">
             <a href="#about">
               <IoIosArrowDown className="text-4xl text-white animate-bounce" />
             </a>

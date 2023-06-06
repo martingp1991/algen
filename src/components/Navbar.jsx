@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.webp";
 import { FaInstagram, FaYoutube, FaFacebook, FaSoundcloud, FaTwitch } from 'react-icons/fa';
 
 const Navbar = () => {
@@ -70,19 +70,19 @@ const Navbar = () => {
         </a>
         <ul className="hidden mt-2 sm:flex">
           <li className="p-4 ml-1 text-white duration-300 ease-in-out hover:text-blue-600 hover:scale-125">
-            <a href="/" className="text-lg">INICIO</a>
+            <a href="/" className="text-base">INICIO</a>
           </li>
           <li className="p-4 ml-1 text-white duration-300 ease-in-out hover:text-blue-600 hover:scale-125">
-            <a href="/#about" className="text-lg">NOSOTROS</a>
+            <a href="/#about" className="text-base">NOSOTROS</a>
           </li>
           <li className="p-4 ml-1 text-white duration-300 ease-in-out hover:text-blue-600 hover:scale-125">
-            <a href="/#service" className="text-lg">SERVICIOS</a>
+            <a href="/#service" className="text-base">SERVICIOS</a>
           </li>
           <li className="p-4 ml-1 text-white duration-300 ease-in-out hover:text-blue-600 hover:scale-125">
-            <a href="/#work" className="text-lg">TRABAJOS</a>
+            <a href="/#work" className="text-base">TRABAJOS</a>
           </li>
           <li className="p-4 ml-1 text-white duration-300 ease-in-out hover:text-blue-600 hover:scale-125">
-            <a href="/#contact" className="text-lg">CONTACTO</a>
+            <a href="/#contact" className="text-base">CONTACTO</a>
           </li>
         </ul>
         {/* Mobile Button */}
